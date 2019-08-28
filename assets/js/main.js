@@ -5,6 +5,12 @@
   const UF = document.querySelector("#UF");
 
   CEP.oninput = () => {
+    if (CEP.value === "" || CEP.value.length < 9) {
+      rua.value = "";
+      bairro.value = "";
+      UF.value = "";
+    }
+
     fetch(`https://viacep.com.br/ws/${CEP.value}/json/`)
       .then(response => response.json())
       .then(data => {
