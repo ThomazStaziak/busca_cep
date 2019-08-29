@@ -22,7 +22,7 @@ form {
 .bg-image {
   width: 100%;
   height: 25vh;
-  background-image: url("https://media.giphy.com/media/qSt6muCWF1JDi/giphy.gif");
+  background-image: url("../img/truck.gif");
   background-size: cover;
   background-position: center center;
 }
